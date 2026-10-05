@@ -1,0 +1,18 @@
+.billing-table .rdt_table { min-width: 0; }
+.billing-table .rdt_cellBase { min-width: 0; }
+.billing-table .rdt_cellBase > div,
+.billing-table .rdt_cellBase > span { max-width: 100%; }
+.billing-table .rdt_TableCell,
+.billing-table .rdt_TableCol,
+.billing-table .rdt_columnText { white-space: normal; overflow-wrap: anywhere; }
+.billing-table .billing-badge { white-space: normal; padding: 4px 6px; line-height: 1.35; }
+.billing-table .billing-badge > span { flex-shrink: 0; }
+.billing-table .billing-tenant { min-width: 0; gap: 6px; }
+.billing-table .billing-tenant-name { min-width: 0; overflow-wrap: anywhere; }
+@media (min-width: 1024px) {
+  .billing-table .rdt_table { width: 100%; }
+  .billing-table .rdt_cellBase { padding-left: 6px !important; padding-right: 6px !important; }
+}
+@media (max-width: 1023px) {
+  .billing-table .rdt_table { min-width: 900px; }
+}

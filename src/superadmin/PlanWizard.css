@@ -1,0 +1,13 @@
+@keyframes plan-wizard-next {
+  from { opacity: 0; transform: translateX(32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes plan-wizard-prev {
+  from { opacity: 0; transform: translateX(-32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.plan-wizard-next { animation: plan-wizard-next 220ms ease-out; }
+.plan-wizard-prev { animation: plan-wizard-prev 220ms ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .plan-wizard-panel { animation: none; }
+}
